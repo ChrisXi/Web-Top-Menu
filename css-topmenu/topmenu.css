@@ -7,8 +7,6 @@ div#topmenu_menu {
 	left:0;
 
 	background: #87CEEB;
-	box-shadow: 1px 5px 10px 1px rgba(0,0,0,.5);
-	
 }
 div#topmenu_menu ul{
 	height: 40px;
@@ -55,5 +53,8 @@ img#topmenu_icon {
 
 	margin-right: 3%;
 	padding-top: 4px;
-	
+}
+.topmenu_menufloat {
+	box-shadow: 1px 5px 10px 1px rgba(0,0,0,.5);
+	background: red;
 }
