@@ -1,13 +1,12 @@
-div#topmenu_menu {
-	position: fixed;
-	
+div#topmenu_menu {	
+	position: relative;
 	width: 100%;
 
-	top: 0;
-	left:0;
+	padding: 0;
+	margin-top: -4px;
 
 	background: #87CEEB;
-
+	z-index: 1001;
 }
 div#topmenu_menu ul{
 	height: 40px;
@@ -20,7 +19,7 @@ div#topmenu_menu ul{
 div#topmenu_menu ul li{
 	float: left;
 
-	width: 80px;
+	width: 70px;
 	height: 40px;
 
 	line-height: 40px;
@@ -38,13 +37,25 @@ div#topmenu_menu ul li li{
 	opacity: 0.7;
 	
 	border-top:  white 1px dashed;
+	z-index: 2000;
 }
 div#topmenu_menu ul li li a{
 	text-decoration: none;
 	color: white;
+	z-index: 2000;
 }
 div#topmenu_menu ul li li:hover{
 	opacity: 1;
+}
+img#topmenu_name {
+	float: right;
+
+	height: 50%;
+
+	margin-right: 1%;
+	padding-top: 12px;
+
+	display: none;
 }
 img#topmenu_icon {
 	float: right;
@@ -56,6 +67,10 @@ img#topmenu_icon {
 	padding-top: 4px;
 }
 .topmenu_menufloat {
+	/*position: fixed;*/
+
+	top: 0;
+	left:0;
+
 	box-shadow: 1px 5px 10px 1px rgba(0,0,0,.5);
-	background: red;
 }
